@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla </title>
+
+    <STyle>
+        table {
+            font-family: sans-serif;
+            border: 5px solid rgb(19, 2, 2);
+            border-collapse: collapse;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+
+        }
+        caption {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+        th,
+       td {
+            border: 5px solid rgb(2, 27, 2)
+            padding: 5rem;
+        }
+      /*   tr:nth-child(4) td:not(2) {
+            background-color: rgb(238, 144, 214);
+             letter-spacing: 90px; 
+            padding-left: 50px; 
+            text-transform: uppercase;
+        } */
+
+        td:first-child,
+        th,
+        tfoot{
+            background-color: rgb(94, 176, 214);
+        } 
+
+
+
+ 
+      /   td{
+            background-color: rgb(77, 76, 85);
+        }  
+
+             col {  background-color: rgb(56, 51, 92);
+
+            }  
+
+             col:nth-child(1) {  background-color: rgb(167, 182, 228); 
+
+                 }
+            col:nth-child(2) {  background-color: rgb(62, 201, 194);  } 
+ 
+               
+        
+    </STyle>
+</head>
+
+<body>
+
+    <!-- Estructura en HTML sirve para mostrar contenido tabulado
+    <Table>  Etiqueta que encierra una tabla
+        <tr></tr> Table row, etiqueta que construlle una fila
+        <td></td> Table data. etiqueta que construlle una celda
+
+        Truco: el numero de celdas dentro de un tr establecera el numero de columnas de la fila. -->
+
+    <h1> Tablas</h1>
+    <table>
+        <caption> HORARIO DE CLASE </caption>
+        <colgroup>
+            <col span="5"> 
+            <col>
+            
+        
+        </colgroup>
+        <thead>
+            <th></th>
+            <th>L</th>
+            <th>M</th>
+            <th>M</th>
+            <th>J</th>
+            <th>V</th>
+          
+        </thead>
+        <Tbody>
+
+        
+            <td>8:30 - 9:30</td>
+            <td>Matematicas</td>
+            <td>Matematicas</td>
+            <td>Sociales</td>
+            <td>Matematicas</td>
+            <td>Matematicas</td>
+        </tr>
+
+        <tr>
+            <td>9:30 - 10:25</td>
+            <td>Lengua</td>
+            <td>Lengua</td>
+            <td>Matematicas</td>
+            <td>Ciencias</td>
+            <td>Lengua</td>
+        </tr>
+
+        <tr>
+            <td>10:25 - 11:20</td>
+            <td>Educacion Fisica</td>
+            <td>Ciencias</td>
+            <td>Lengua</td>
+            <td>Lengua</td>
+            <td>Educacion Fisica</td>
+        </tr>
+
+        <tr>
+            <td>11:20 - 11:45</td>
+            <td colspan="5">Recreo</td>
+        </tr>
+
+        <tr>
+            <td>11:45 - 12:40</td>
+            <td> Ingles</td>
+            <td>Sociales</td>
+            <td>Ingles</td>
+            <td>tutoria</td>
+            <td>Ingles</td>
+        </tr>
+
+        <tr>
+            <td>12:40 - 13:35</td>
+            <td rowspan="2">Tecnologia</td>
+            <td> Musica</td>
+            <td>Educacion Fisica</td>
+            <td>Religion</td>
+            <td rowspan="2">Tecnologia</td>
+        </tr>|
+
+        <tr>
+            <td>13:35 - 14:30</td>
+            <td>Frances</td>
+            <td>Tecnologia</td>
+            <td>Frances</td>
+        </tr>
+    </Tbody>
+    <TFoot> 
+        <TR>
+            <TD colspan="5"> Total de Asignaturas</TD>
+            <td> 12</td>
+        </TR>
+    </TFoot>
+    </table>
+
+</body>
+
+</html>
